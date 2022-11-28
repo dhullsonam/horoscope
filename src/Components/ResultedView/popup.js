@@ -1,24 +1,15 @@
-import { useState } from 'react';
+
 import './popup.css';
 
 
 function Popup(props) {
     const { zodiacData } = props;
-    let ishow = true;
-    const [isTrue, setValue] = useState(true);
 
-    const handler = () => {
-        console.log("hh")
-        ishow = !ishow
-        setValue(false);
-        console.log(isTrue)
-
-    }
     return (
         <div className='main'>
             
             {
-                zodiacData != ""  ?
+                zodiacData !== ""  ?
 
                     <div className='holder'>
                         <h1>{props.horoscopeSign}</h1>
