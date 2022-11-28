@@ -4,13 +4,11 @@ import './popup.css';
 
 function Popup(props) {
     const { zodiacData } = props;
-
     return (
         <div className='main'>
             
             {
-                zodiacData !== ""  ?
-
+                zodiacData.length !== 0  ?
                     <div className='holder'>
                         <h1>{props.horoscopeSign}</h1>
                         <p> Date Range : {zodiacData.date_range}</p>
