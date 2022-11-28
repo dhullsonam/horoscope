@@ -1,0 +1,31 @@
+*{
+    margin : 0;
+    /* padding-top: 20px; */
+}
+
+.conatainer{
+    padding-top: 1%;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-flow: column wrap;
+    width: 70%;
+    margin: auto;
+    flex-grow: 2;
+    flex-wrap:wrap;
+}
+.items{
+
+}
+.items img{
+    height: 120px;
+    width: 120px;
+    padding:10px;
+    flex-grow: 1;
+     border-radius: 50%;
+  
+}
+.items img:hover{
+    cursor: default; 
+    transform: rotate(360deg); 
+    transition: all 0.3s ease-in-out .1s;
+}
