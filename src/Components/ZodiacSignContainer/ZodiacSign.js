@@ -16,10 +16,9 @@ import './ZodiacSign.css'
 
 
 function ZodiacSignContainer() {
-    const {user, setUser} = useContext(UserContext);
+    const {setUser} = useContext(UserContext);
     const handleImage = (e) => {
         setUser(e)
-   
     }
     return (
         <>

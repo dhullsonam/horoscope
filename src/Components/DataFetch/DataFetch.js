@@ -21,11 +21,12 @@ function DataFetch() {
     useEffect(() => {
         if(user !== ""){
             console.log(user)
-        fetch(`https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=${user}&day=today`, requestOptions)
+        fetch(`https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=${user}&day=today`,requestOptions)
             .then(response => response.json())
             .then(result => setZodiacData(result))
             .catch(error => console.log('error', error));
         }
+        // eslint-disable-next-line
     }, [user])
 
     return (
